@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    text-align: center;
 }
 
 #book {
@@ -14,15 +15,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.page {
-    display: none;
+section {
+    margin-bottom: 20px;
 }
 
-.page.cover {
-    text-align: center;
-}
-
-.page h1, .page h2, .page p {
+h1, h2 {
     color: #333;
 }
 
@@ -37,4 +34,14 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+/* Additional styles for the author section */
+#author {
+    text-align: left;
+}
+
+/* Hide the story section initially */
+.hidden {
+    display: none;
 }

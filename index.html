@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bobby the Bear</title>
+    <title>Bobby the Bear's Adventure</title>
 </head>
 <body>
     <div id="book">
-        <!-- Cover Page -->
-        <div class="page cover">
-            <h1>Welcome to Bobby the Bear's Adventure</h1>
-            <button onclick="turnPage()">Start Reading</button>
-        </div>
+        <!-- Cover Section -->
+        <section id="cover">
+            <h1>Bobby the Bear's Adventure</h1>
+            <button onclick="startAdventure()">Start Adventure</button>
+        </section>
 
-        <!-- Page 1 -->
-        <div class="page">
-            <h2>Page 1: Bobby's Discovery</h2>
-            <p>Once upon a time in the deep, green forest, Bobby the Bear discovered a magical cave...</p>
-            <button onclick="turnPage()">Next Page</button>
-        </div>
+        <!-- Story Section -->
+        <section id="story" class="hidden">
+            <h2>Once upon a time...</h2>
+            <p>Bobby the Bear lived in a magical forest...</p>
+            <p>Explore the enchanted forest with Bobby as he discovers new friends and embarks on exciting adventures!</p>
+            <button onclick="nextPage()">Next Page</button>
+        </section>
 
-        <!-- Page 2 -->
-        <div class="page">
-            <h2>Page 2: Bobby's Friendship</h2>
-            <p>Inside the cave, Bobby found a friendly squirrel named Sammy. They became the best of friends...</p>
-            <button onclick="turnPage()">Next Page</button>
-        </div>
-
-        <!-- Add more pages as needed -->
-
+        <!-- Author Information Section -->
+        <section id="author" class="hidden">
+            <h2>About the Author</h2>
+            <p>Meet the creative mind behind Bobby the Bear's Adventure!</p>
+            <p>Author: [Your Name]</p>
+            <p>Email: [Your Email]</p>
+            <p>Follow me on <a href="[Your Social Media Link]" target="_blank">Social Media</a></p>
+        </section>
     </div>
 
     <script src="script.js"></script>
