@@ -1,29 +1,12 @@
-function startAdventure() {
-    // Hide the cover and show the story section
-    document.getElementById('cover').style.display = 'none';
-    document.getElementById('story').style.display = 'block';
-}
-
-function nextPage() {
-    // You can implement logic for more pages or interactions here
-    alert("Stay tuned for the next chapter of Bobby the Bear's adventure!");
-}
-
-// ... (previous functions remain unchanged)
-
-function showAuthorInfo() {
-    // Hide the story section and show the author section
-    document.getElementById('story').style.display = 'none';
-    document.getElementById('author').style.display = 'block';
-}
-
-// for back button 
 let currentPage = 0;
 
 function startAdventure() {
     document.getElementById('cover').style.display = 'none';
     document.getElementById('story').style.display = 'block';
     document.getElementById('author').style.display = 'none';
+
+    // Show the Home button when leaving the cover page
+    document.getElementById('homeButton').style.display = 'inline-block';
 }
 
 function nextPage() {
@@ -33,6 +16,9 @@ function nextPage() {
         pages[currentPage].style.display = 'none';
         currentPage++;
         pages[currentPage].style.display = 'block';
+        
+        // Show the Home button on subsequent pages
+        document.getElementById('homeButton').style.display = 'inline-block';
     } else {
         showAuthorInfo();
     }
@@ -49,6 +35,9 @@ function prevPage() {
         // If on the first page, go back to cover
         document.getElementById('story').style.display = 'none';
         document.getElementById('cover').style.display = 'block';
+
+        // Hide the Home button on the cover page
+        document.getElementById('homeButton').style.display = 'none';
     }
 }
 
@@ -57,7 +46,6 @@ function showAuthorInfo() {
     document.getElementById('author').style.display = 'block';
 }
 
-// for home button click
 function goHome() {
     const pages = document.querySelectorAll('.page');
 
@@ -68,4 +56,7 @@ function goHome() {
 
     document.getElementById('cover').style.display = 'block';
     currentPage = 0;
+
+    // Hide the Home button on the cover page
+    document.getElementById('homeButton').style.display = 'none';
 }

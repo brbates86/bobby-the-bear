@@ -1,9 +1,28 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Biko', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #4a250493;
     text-align: center;
+}
+
+/* New styles for the header and logo */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #book {
@@ -15,6 +34,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#purchase-links {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 section {
     margin-bottom: 20px;
 }
@@ -25,10 +52,10 @@ h1, h2 {
 
 button {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #2980b9;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -38,7 +65,7 @@ button:hover {
 
 /* Additional styles for the author section */
 #author {
-    text-align: left;
+    text-align: center;
     margin: 20px;
 }
 

@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bobby the Bear's Adventure</title>
+    <title>Bobby the Bear</title>
 </head>
 <body>
+    <!-- add logo to header -->
+    <header>
+        <div class="container">
+            <img src="img/Bobby the bear.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
     <div id="book">
         <!-- Cover Section -->
         <section id="cover">
-            <h1>Bobby the Bear's Adventure</h1>
-            <button onclick="startAdventure()">Start Adventure</button>
+            <h1>Bobby the Bear</h1>
+            <button onclick="startAdventure()">Start</button>
         </section>
 
         <!-- Story Section -->
@@ -20,25 +27,40 @@
             <p>Bobby the Bear lived in a magical forest...</p>
             <p>Explore the enchanted forest with Bobby as he discovers new friends and embarks on exciting adventures!</p>
             <button onclick="prevPage()">Back</button>
-            <button onclick="nextPage()">Next Page</button>
+            <button onclick="nextPage()">Next</button>
             <!-- Back Button -->
             
         </section>
-
+        <hr>
         <!-- Author Information Section -->
         <section id="author">
             <h2>About the Author</h2>
-            <p>Meet the creative mind behind Bobby the Bear's Adventure!</p>
-            <p>Author: [Your Name]</p>
-            <p>Email: [Your Email]</p>
-            <p>Follow me on <a href="[Your Social Media Link]" target="_blank">Social Media</a></p>
+            <p>Meet the creative mind behind Bobby the Bear!</p>
+            <p>Author: Ryan O'Connor</p>
+            <p>Email: ryan@hotmail.com</p>
+            <p><a href="[Your Social Media Link]" target="_blank">Facebook</a> | <a href="[Your Social Media Link]" target="_blank">Instagram</a> | <a href="[Your Social Media Link]" target="_blank">Linked in</a></p>
         </section>
 
+        <hr>
+        <!-- ... (previous code remains unchanged) -->
+
+
+
         <!-- Home Button -->
-        <button onclick="goHome()">Home</button>
-        
+        <button id="homeButton" onclick="goHome()" style="display: none;">Home</button>
     </div>
 
+    <!-- Book Purchase Links Section -->
+    <div id="purchase-links">
+    <section id="purchase-links">
+        <h2>Get Bobby the Bear Books Now!</h2>
+         <p>Explore Bobby's world by getting your own copy today!</p>
+     
+         <a href="[Amazon Link]" target="_blank">Buy on Amazon</a>
+    <!-- Add more purchase links as needed -->
+     
+    </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
