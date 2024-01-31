@@ -39,6 +39,7 @@ button:hover {
 /* Additional styles for the author section */
 #author {
     text-align: left;
+    margin: 20px;
 }
 
 /* Hide the story section initially */
